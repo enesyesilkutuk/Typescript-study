@@ -28,7 +28,7 @@ const product: {
     details: {
         title: string;
         description: string;
-    }
+    };
 } = {
     id: '1',
     price: 123,
@@ -73,10 +73,13 @@ const member: {
     age: number;
     hobbies: (string | number)[];
     role: [number, string];
+    status: string | number;
 } = {
     name: "Enes",
     age: 32,
     hobbies: ["football", 15, "swimming"],
     role: [90, "asd"],
+    status: Position.FRONTEND,
 };
 
+console.log(member.status); // FRONTEND
