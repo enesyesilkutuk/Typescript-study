@@ -46,7 +46,7 @@ const accounting = new Department("1", "Accounting");
 accounting.addEmployee("Max");
 accounting.addEmployee("Mark");
 
-accounting.employees[2] = "John";
+accounting.employees[2] = "John";  // employees is private so it can not be acessed outside from the class
 accounting.id = "2"; // id can not be modified because it is readonly
 console.log(accounting.employees); // employees is not accessible from outside of class
 console.log(accounting.id)
