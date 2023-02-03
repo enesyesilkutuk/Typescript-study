@@ -16,7 +16,6 @@ const man = new Person("Furkan", 32);
 console.log(man);
 man.describe();
 
-
 class Department {
     // private readonly id: string;
     // public name:string;
