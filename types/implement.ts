@@ -1,6 +1,7 @@
 interface Greetable {
     name: string;
     birthYear: number;
+    lastName?: string; // optional property
     greet(phrase: string): void;
 };
 
@@ -12,7 +13,7 @@ class Person implements Greetable {
         this.age = yas;
     }
     greet(hometown: string): void {
-        console.log(`Hello,my name is ${this.name}, I'm ${this.age} years old and I was born in ${hometown} in ${this.birthYear}`)
+        console.log(`Hello,my name is ${this.name}, I'm ${this.age} years old and I was born in ${hometown} in ${this.birthYear}`);
     }
     getGradYear(): number {
         this.gradYear = this.birthYear + 22;

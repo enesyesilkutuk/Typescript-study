@@ -1,5 +1,5 @@
 interface Musician {
-    name: string,
+    readonly name: string,
     instrument: string,
     play(action:string): string,
 };
